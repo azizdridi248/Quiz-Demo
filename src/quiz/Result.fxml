@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="quiz.ResultController">
+   <children>
+      <Label fx:id="remark" alignment="CENTER" layoutX="212.0" layoutY="45.0" prefHeight="18.0" prefWidth="175.0" text="RESULT">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </Label>
+      <Label fx:id="markstext" alignment="CENTER" layoutX="102.0" layoutY="125.0" prefHeight="18.0" prefWidth="378.0" text="GREAT WORK!" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="marks" alignment="CENTER" layoutX="93.0" layoutY="200.0" prefHeight="82.0" prefWidth="91.0" style="-fx-background-color: #3c27e3; -fx-border-radius: 20px; -fx-background-radius: 20px;" text="1/4" textFill="#29c6e3">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </Label>
+      <ProgressIndicator fx:id="correct_progress" layoutX="247.0" layoutY="200.0" minHeight="111.0" minWidth="130.0" prefHeight="111.0" prefWidth="130.0" progress="0.34" style="-fx-accent: #90EE90; -fx-border-radius: 20px;">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </ProgressIndicator>
+      <ProgressIndicator fx:id="wrong_progress" layoutX="430.0" layoutY="200.0" minHeight="111.0" minWidth="130.0" prefHeight="111.0" prefWidth="130.0" progress="0.74" style="-fx-accent: #FF6347; -fx-border-radius: 20px;">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </ProgressIndicator>
+      <Label fx:id="correcttext" layoutX="169.0" layoutY="341.0" text="1 mark scored" />
+      <Label fx:id="wrongtext" layoutX="400.0" layoutY="341.0" text="2 wrong answer" />
+   </children>
+</AnchorPane>
